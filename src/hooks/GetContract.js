@@ -1,9 +1,17 @@
 import React from "react";
-import { useAccount } from "wagmi";
+import { useContract } from "wagmi";
+import { useSigner } from "wagmi";
 
-const GetAccount = () => {
-  const { data } = useAccount();
-  return data?.address;
+const GetContract = (addr, abi_data) => {
+  const { data: signer } = useSigner();
+
+  const contract = useContract({
+    addressOrName: addr,
+    contractInterface: abi_data,
+    signerOrProvider: signer,
+  });
+
+  return contract;
 };
 
-export default GetAccount;
+export default GetContract;
