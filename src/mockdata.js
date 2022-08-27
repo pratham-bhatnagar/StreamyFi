@@ -1,0 +1,58 @@
+export const mockdata = [
+  {
+    status: "inactive",
+    streamID: "#1e3e21d",
+    withdrawn: "Yes",
+    unlocked: "50",
+    actions: "Lorem ip",
+  },
+  {
+    status: "inactive",
+    streamID: "#1e3e21d",
+    withdrawn: "Yes",
+    unlocked: "50",
+    actions: "Lorem ip",
+  },
+  {
+    status: "inactive",
+    streamID: "#1e3e21d",
+    withdrawn: "Yes",
+    unlocked: "50",
+    actions: "Lorem ip",
+  },
+  {
+    status: "inactive",
+    streamID: "#1e3e21d",
+    withdrawn: "Yes",
+    unlocked: "50",
+    actions: "Lorem ip",
+  },
+  {
+    status: "inactive",
+    streamID: "#1e3e21d",
+    withdrawn: "Yes",
+    unlocked: "50",
+    actions: "Lorem ip",
+  },
+  {
+    status: "inactive",
+    streamID: "#1e3e21d",
+    withdrawn: "Yes",
+    unlocked: "50",
+    actions: "Lorem ip",
+  },
+  {
+    status: "inactive",
+    streamID: "#1e3e21d",
+    withdrawn: "Yes",
+    unlocked: "50",
+    actions: "Lorem ip",
+  },
+  {
+    status: "inactive",
+    streamID: "#1e3e21d",
+    withdrawn: "Yes",
+    unlocked: "50",
+    actions: "Lorem ip",
+  },
+];
