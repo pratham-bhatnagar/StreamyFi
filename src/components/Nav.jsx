@@ -19,6 +19,9 @@ const Nav = ({ isAuth, setIsAuth }) => {
           <li className="px-2">
             <Link to="/outgoing">Outgoing</Link>
           </li>
+          <li className="px-2">
+            <Link to="/addService">Add Service</Link>
+          </li>
         </ul>
       )}
       <button className=" text-white font-black rounded p-3 cursor-pointer bg-gradient">

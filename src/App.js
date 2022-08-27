@@ -6,6 +6,7 @@ import Outgoing from "./pages/Outgoing";
 import Incoming from "./pages/Incoming";
 import Streams from "./pages/Streams";
 import Nav from "./components/Nav";
+import AddService from './pages/AddService'
 
 function App() {
   const [isAuth, setIsAuth] = useState(true);
@@ -18,6 +19,7 @@ function App() {
         <Route path="/streams" component={Streams} />
         <Route path="/incoming" component={Incoming} />
         <Route path="/outgoing" component={Outgoing} />
+        <Route path="/addservice" component={AddService} />
       </Router>
     </div>
   );
