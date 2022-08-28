@@ -55,20 +55,20 @@ function AddService() {
           <h1 className="text-gradient text-2xl">Add Service</h1>
           <label
             htmlFor="amount"
-            className="block  text-sm font-medium text-gray-400 mt-[16px]"
+            className="block  text-md text-gray-100 font-black mt-[16px]"
           >
             Amount
           </label>
           <input
             type="number"
             onChange={(e) => setAmount(e.target.value)}
-            className="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+            className="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
             placeholder="1000"
             required
           />
           <label
             htmlFor="amount"
-            className="block  text-sm font-medium text-gray-400  mt-[16px]"
+            className="block  text-md text-gray-100 font-black  mt-[16px]"
           >
             Frequency
           </label>
@@ -77,7 +77,7 @@ function AddService() {
             <input
               type="number"
               onChange={(e) => setFreq(e.target.value)}
-              className="bg-gray-50 mr-3 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+              className="bg-gray-50 mr-3 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
               placeholder="1000"
               required
             />
@@ -85,7 +85,7 @@ function AddService() {
               name="freq"
               id="freq"
               onChange={(e) => setFreqPeriod(e.target.value)}
-              className="bg-gray-50 text-gray-400 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+              className="bg-gray-50 text-gray-600 border border-gray-300  text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
               placeholder=""
               defaultValue={"seconds"}
               required
@@ -100,14 +100,14 @@ function AddService() {
 
           <label
             htmlFor="amount"
-            className="block  text-sm font-medium text-gray-400  mt-[16px]"
+            className="block  text-md text-gray-100 font-black  mt-[16px]"
           >
             Name
           </label>
           <input
             type="number"
             onChange={(e) => setName(e.target.value)}
-            className="bg-gray-50 border border-gray-300 text-gray-400 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+            className="bg-gray-50 border border-gray-300 text-gray-600 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
             placeholder="1000"
             required
           />
