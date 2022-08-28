@@ -25,7 +25,7 @@ const Nav = ({ isAuth, setIsAuth }) => {
           </li>
         </ul>
       )}
-      <ConnectButton.Custom>
+      {/* <ConnectButton.Custom>
         {({
           account,
           chain,
@@ -35,8 +35,6 @@ const Nav = ({ isAuth, setIsAuth }) => {
           authenticationStatus,
           mounted,
         }) => {
-          // Note: If your app doesn't use authentication, you
-          // can remove all 'authenticationStatus' checks
           const ready = mounted && authenticationStatus !== "loading";
           const connected =
             ready &&
@@ -114,7 +112,8 @@ const Nav = ({ isAuth, setIsAuth }) => {
             </div>
           );
         }}
-      </ConnectButton.Custom>
+      </ConnectButton.Custom> */}
+      <ConnectButton />{" "}
     </nav>
   );
 };

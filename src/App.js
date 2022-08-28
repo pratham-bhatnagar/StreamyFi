@@ -14,12 +14,18 @@ import Streams from "./pages/Streams.jsx";
 import AddService from "./pages/AddService";
 
 const { chains, provider } = configureChains(
-  [chain.mainnet, chain.polygon, chain.optimism, chain.arbitrum],
+  [
+    chain.mainnet,
+    chain.polygon,
+    chain.polygonMumbai,
+    chain.ropsten,
+    chain.rinkeby,
+  ],
   [alchemyProvider({ alchemyId: process.env.ALCHEMY_ID }), publicProvider()]
 );
 
 const { connectors } = getDefaultWallets({
-  appName: "My RainbowKit App",
+  appName: "Streamify",
   chains,
 });
 
