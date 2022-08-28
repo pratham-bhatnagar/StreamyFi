@@ -26,15 +26,56 @@ function AddService() {
 
   return (
     <Layout>
-      {" "}
-      <div className="flex mt-[10vh] text-black flex-col gap-5">
-        {" "}
-        <input onChange={(e) => setAmount(e.target.value)} />
-        <input onChange={(e) => setFreq(e.target.value)} />
-        <input onChange={(e) => setName(e.target.value)} />
-        <button className="bg-white" onClick={() => AddSubscription()}>
-          submit
-        </button>
+      <div className="bg-gradient p-1 rounded-md h-fit w-fit mx-auto mt-[20vh] w-[50vw]">
+        <div className="bg-zinc-800 flex rounded-md p-10 text-black flex-col gap-5">
+          <h1 className="text-gradient text-2xl">Add Service</h1>
+          <label
+            htmlFor="amount"
+            className="block  text-sm font-medium text-white mt-[16px]"
+          >
+            Amount
+          </label>
+          <input
+            type="number"
+            onChange={(e) => setAmount(e.target.value)}
+            className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+            placeholder="1000"
+            required
+          />
+          <label
+            htmlFor="amount"
+            className="block  text-sm font-medium text-white  mt-[16px]"
+          >
+            Frequency
+          </label>
+          <input
+            type="number"
+            onChange={(e) => setFreq(e.target.value)}
+            className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+            placeholder="1000"
+            required
+          />
+          <label
+            htmlFor="amount"
+            className="block  text-sm font-medium text-white  mt-[16px]"
+          >
+            Name
+          </label>
+          <input
+            type="number"
+            onChange={(e) => setName(e.target.value)}
+            className="bg-gray-50 border border-gray-300 text-white text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5  "
+            placeholder="1000"
+            required
+          />
+
+          <button
+            className="bg-white bg-gradient text-yellow-600 rounded-lg  mt-[23px] font-black py-3 "
+            onClick={() => AddSubscription()}
+          >
+            Submit this service
+          </button>
+        </div>
       </div>
     </Layout>
   );
